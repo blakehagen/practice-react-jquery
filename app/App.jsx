@@ -14,6 +14,12 @@ const App = React.createClass({
 
   componentDidMount () {
     // http://swapi.co/api/people/
+    $.get('http://swapi.co/api/people/', data => {
+        console.log(data);
+        this.setState({
+            people: data.results
+        });
+    });
   },
 
   _handleCardClick (name, e) {
@@ -22,6 +28,7 @@ const App = React.createClass({
 
   render () {
     return (
+        
       <PersonList people={this.state.people} onCardClick={this._handleCardClick} />
     );
   }

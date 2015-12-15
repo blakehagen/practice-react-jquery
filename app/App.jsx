@@ -3,7 +3,7 @@ const ReactDOM = require('react-dom');
 
 const $ = require('jquery');
 
-const PersonList = require('./PersonList');
+const PersonList = require('./PersonList.jsx');
 
 const App = React.createClass({
   getInitialState () {

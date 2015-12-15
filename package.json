@@ -14,7 +14,7 @@
     "webpack": "^1.12.2"
   },
   "dependencies": {
-    "browser-json-client": "0.0.15",
+    "jquery": "^2.1.4",
     "mx-react-components": "^1.2.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
